@@ -71,8 +71,6 @@ In `/scratch/bio373_2020/data/SNPcalling/answers/MappingAnswers.md`
 
 ## 5. Variant call part 2
 
-1. Here, we'll look in the filtered VCF (05_variants_filtered.vcf.gz). This time, see if you notice what changed after the filtration step. For example, the FILTER field should now have a value (not just '.'). If you search for `FT`, you'll see in either samples the GT should have become a NoCall (./.).
+1. Here, we'll look in the filtered VCF (05_variants_filtered.vcf.gz). This time, see if you notice what changed after the filtration step. For example, the FILTER field should now have a value (not just '.'). 
 
 2. Count the number of variants that failed each of the filters we applied (those applied to stats in the INFO field).
-
-3. Count the number of genotypes that passed the genotype filter (GQ) for each sample. This one's a bit tricky due to the `FT` behavior noted above!
