@@ -13,7 +13,7 @@ GFF files contains information on features of a sequence: genes, introns, etc. T
 3. How many of each type of feature (column 3) are there?
 4. How many CDS’s are there within scaffold_1? Beware! There’s also scaffold_10, scaffold_11, etc
 
-### Extra practice
+### Extra practice 1
 
 Zip the file and modify your commands to answer the same questions!
 
@@ -21,7 +21,7 @@ Zip the file and modify your commands to answer the same questions!
 $ gzip Ahal.gff
 ```
 
-Answers can be found on the server here: `/scratch/bio373_2021/data/SNPcalling/answers/CommandLineAnswers.txt`
+Answers can be found on the server here: `/scratch/bio373_2021/data/SNPcalling/answers/CommandLineAnswers.md`
 
 * * *
 
@@ -35,7 +35,7 @@ Answers can be found on the server here: `/scratch/bio373_2021/data/SNPcalling/a
 
 ## Answers
 
-On the server: `/scratch/bio373_2020/data/SNPcalling/answers/fastAQ.txt`
+On the server: `/scratch/bio373_2020/data/SNPcalling/answers/EnvironmentAnswers.md`
 
 * * *
 
@@ -47,25 +47,27 @@ Bitwise flag meaning: <https://broadinstitute.github.io/picard/explain-flags.htm
 
 1. During mapping, each read is tagged with a bitwise flag that contains information about the read. Find bitwise flags for a few reads in any bam file and decode them using the link above. On the website, you can check only one box at a time to see what an individual property’s value is.
 
-2. Using samtools tview, go to chr2:7271 in 516950.dedup.bam by pressing ‘g’ then typing chr2:7271[Enter]. Compare that with chr2:1018541. Why do you think they are different in terms of coverage and mapping quality? Find a few other areas that look interesting to you and take note of their position if you'd like to go back after the SNP calling step and see if a SNP was indeed called.
+2. Using samtools tview, go to chr2:7271 in 516950.sorted.bam by pressing ‘g’ then typing chr2:7271[Enter]. Compare that with chr2:1018541. Why do you think they are different in terms of coverage and mapping quality? Find a few other areas that look interesting to you and take note of their position if you'd like to go back after the SNP calling step and see if a SNP was indeed called.
 
 3. Do these regions look the same in sample 660389?
 
-4. How many unique bitwise flags are there in 516950.sorted.bam file? The dedupped bam file (516950.dedup.bam)? How many reads were marked as duplicates? (Hint: the flags are the sum of the value of each individual property assigned to a read; duplicate = 1024)
+### Extra practice 2
 
-5. Practice writing bash script to run the alignment and dedup steps on both genotypes. To encourage organization and reproducibility, make a directory to keep your script(s) in and run from there :)
+Practice writing bash script to run the alignment steps on both genotypes. To encourage organization and reproducibility, make a directory to keep your script(s) in and run from there :)
 
 ### Answer
 
-In `/scratch/bio373_2020/data/SNPcalling/answers/mapping.txt`
+In `/scratch/bio373_2020/data/SNPcalling/answers/MappingAnswers.md`
 
 ## 4. Variant call part 1
 
-1. Here, we'll look in the VCF (04_raw_variants.vcf.gz) and take note of the information contained in the file (which is an overwhelming amount!). I like to get to the variants by searching for CHROM (`/CHROM`). You can look at any SNP, but I suggest searching for 7317, then 1018580. Those sites correspond to where we looked at in the BAM file in the mapping exercises. Take note of the variant quality (QD in INFO field). For an individual, take note of the genotype quality (GQ) and depth (AD and DP) as well. If you'd like, view the BAM file again using `samtools tview` and observe how the results we get from GATK compare to what you can see at those positions in a BAM file. Are the genotypes what you would expect just by looking at the BAM file?  
+1. How many unique bitwise flags are there in 516950.sorted.bam file? The dedupped bam file (516950.dedup.bam)? How many reads were marked as duplicates? (Hint: the flags are the sum of the value of each individual property assigned to a read; duplicate = 1024)
 
-2. How many variants were discovered in this sample set?
+2. Here, we'll look in the VCF (04_raw_variants.vcf.gz) and take note of the information contained in the file (which is an overwhelming amount!). I like to get to the variants by searching for CHROM (`/CHROM`). You can look at any SNP, but I suggest searching for 7317, then 1018580. Those sites correspond to where we looked at in the BAM file in the mapping exercises. Take note of the variant quality (QD in INFO field). For an individual, take note of the genotype quality (GQ) and depth (AD and DP) as well. If you'd like, view the BAM file again using `samtools tview` and observe how the results we get from GATK compare to what you can see at those positions in a BAM file. Are the genotypes what you would expect just by looking at the BAM file?  
 
-3. Count the number of each genotype (0/0, 0/1, etc) for each sample.
+3. How many variants were discovered in this sample set?
+
+4. Count the number of each genotype (0/0, 0/1, etc) for each sample.
 
 ## 5. Variant call part 2
 
