@@ -21,7 +21,9 @@ Zip the file and modify your commands to answer the same questions!
 $ gzip Ahal.gff
 ```
 
-Answers can be found on the server here: `/scratch/bio373_2021/data/SNPcalling/answers/CommandLineAnswers.md`
+### Answers 1
+
+On the server here: `/scratch/bio373_2021/data/SNPcalling/answers/CommandLineAnswers.md`
 
 * * *
 
@@ -33,7 +35,7 @@ Answers can be found on the server here: `/scratch/bio373_2021/data/SNPcalling/a
 
 3. How many bases are in the reference sequence? How many missing bases (N)? Don’t forget ‘\\n’ is considered a character!
 
-## Answers
+## Answers 2
 
 On the server: `/scratch/bio373_2020/data/SNPcalling/answers/EnvironmentAnswers.md`
 
@@ -55,7 +57,7 @@ Bitwise flag meaning: <https://broadinstitute.github.io/picard/explain-flags.htm
 
 Practice writing bash script to run the alignment steps on both genotypes. To encourage organization and reproducibility, make a directory to keep your script(s) in and run from there :)
 
-### Answer
+### Answer 3
 
 In `/scratch/bio373_2020/data/SNPcalling/answers/MappingAnswers.md`
 
@@ -72,3 +74,7 @@ In `/scratch/bio373_2020/data/SNPcalling/answers/MappingAnswers.md`
 5. Here, we'll look in the filtered VCF (05_variants_filtered.vcf.gz). This time, see if you notice what changed after the filtration step. For example, the FILTER field should now have a value (not just '.').
 
 6. Count the number of variants that failed each of the filters we applied (those applied to stats in the INFO field).
+
+### Answer 4
+
+In `/scratch/bio373_2020/data/SNPcalling/answers/VariantCallAnswers.md`
