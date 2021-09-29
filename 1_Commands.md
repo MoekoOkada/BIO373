@@ -6,7 +6,7 @@ Some of the content overlaps with previous lectures by Masa and others.
 
 Reminder: our server runs on a Linux operating system.  
 The following commands are to 'interact' with that operating system and do NOT work on Windows. Most will work exactly the same on a Mac.  
-Link to server assignment list is [here](https://gist.github.com/masaomi/38be7b693b63a51ed431b3f79be724b1#3-first-task-login-the-server)
+Link to server assignment list is [here](https://gist.github.com/masaomi/999d1177c00116e61909220c1d40e32e)
 
 ```bash
 $ ssh -J username@fgcz-c-047 username@fgcz-kl-003
