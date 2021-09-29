@@ -52,7 +52,7 @@ varName=value
 Examples (run in order):
 
 ```bash
-$ bio373=/sratch/bio373_2020
+$ bio373=/sratch/bio373_2021
 $ workdir=$bio373/data
 $ echo $workdir
 $ ls ${workdir}
