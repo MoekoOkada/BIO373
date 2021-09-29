@@ -2,7 +2,7 @@
 
 ## 1. Command line
 
-GFF file (Ahal.gff) located in `/scratch/bio373_2020/data/SNPcalling/reference`
+GFF file (Ahal.gff) located in `/scratch/bio373_2021/data/SNPcalling/reference`
 
 GFF files contains information on features of a sequence: genes, introns, etc. Take a look and familiarize yourself with the format.
 
@@ -37,7 +37,7 @@ On the server here: `/scratch/bio373_2021/data/SNPcalling/answers/CommandLineAns
 
 ## Answers 2
 
-On the server: `/scratch/bio373_2020/data/SNPcalling/answers/EnvironmentAnswers.md`
+On the server: `/scratch/bio373_2021/data/SNPcalling/answers/EnvironmentAnswers.md`
 
 * * *
 
@@ -59,7 +59,7 @@ Practice writing bash script to run the alignment steps on both genotypes. To en
 
 ### Answer 3
 
-In `/scratch/bio373_2020/data/SNPcalling/answers/MappingAnswers.md`
+In `/scratch/bio373_2021/data/SNPcalling/answers/MappingAnswers.md`
 
 ## 4. Variant call
 
@@ -77,4 +77,4 @@ In `/scratch/bio373_2020/data/SNPcalling/answers/MappingAnswers.md`
 
 ### Answer 4
 
-In `/scratch/bio373_2020/data/SNPcalling/answers/VariantCallAnswers.md`
+In `/scratch/bio373_2021/data/SNPcalling/answers/VariantCallAnswers.md`
