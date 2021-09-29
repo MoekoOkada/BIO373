@@ -164,7 +164,7 @@ grep [-civ] "pattern" file(s).txt
 Examples
 
 ```bash
-$ ln -s /scratch/bio373_2020/data/SNPcalling/reference/Ahal.gff
+$ ln -s /scratch/bio373_2021/data/SNPcalling/reference/Ahal.gff
 $ grep "CDS" Ahal.gff | less
 $ grep -c "CDS" Ahal.gff
 $ grep -vc "CDS" Ahal.gff
@@ -313,7 +313,7 @@ Often you'll want/need to have a file in directories in several locations. Inste
 
 ```bash
 $ ln -s /path/to/file.txt targetName.txt
-$ ln -s /scratch/bio373_2019/SNPcalling/reference/Ahal.gff /srv/kenlab/gwyn/bio373_2019/Ahal.gff 
+$ ln -s /scratch/bio373_2021/data/SNPcalling/reference/Ahal.gff /scratch/bio373_2021/YOUR_USERNAME 
 ```
 
 * * *
