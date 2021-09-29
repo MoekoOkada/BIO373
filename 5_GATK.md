@@ -112,7 +112,7 @@ The Genotype field (column 9) is important. Other flags may appear, but these ar
 
 ## Filtering out low quality data
 
-This last step flags the variants that are low confidence. It will put the filterName in the INFO column and the G_filterName in the sample specific column if the site failed the filter. 
+This last step flags the variants that are low confidence. It will put the filterName in the INFO column and the G_filterName in the sample specific column if the site failed the filter.
 
 ```bash
 $ gatk VariantFiltration -R 00_input/MedtrChr2.fa -O 03_callSNPs/05_variants_filtered.vcf.gz -V 03_callSNPs/04_raw_variants.vcf.gz -filter "QD < 2.0" --filter-name "QD" -filter "MQ < 30.0" --filter-name "MQ" -filter "MQRankSum < -15.0" --filter-name "MQRankSum" -filter "GQ < 20 || DP == 0 " --filter-name "GQ"
@@ -122,6 +122,3 @@ If at least one sample fails the G_filter, a semicolon-separated list of codes f
 i.g. chr2:8248 failed the filter named "QD".
 
 ![Filtered](https://user-images.githubusercontent.com/58171601/135255461-3cba16e7-2269-4585-9ff9-3eae3068549f.png)
-
-
-
