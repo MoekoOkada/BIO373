@@ -36,7 +36,7 @@ Start from your directory on the server for the course and make a new folder for
 
 ```bash
 $ ssh -J username@fgcz-c-047 username@fgcz-kl-003
-$ cd /scratch/bio373_2021/USERNAME
+$ cd /scratch/bio373_2021/YOUR_USERNAME
 $ mkdir VarCall
 ```
 
