@@ -59,7 +59,7 @@ Practice writing bash script to run the alignment steps on both genotypes. To en
 
 In `/scratch/bio373_2020/data/SNPcalling/answers/MappingAnswers.md`
 
-## 4. Variant call part 1
+## 4. Variant call
 
 1. How many unique bitwise flags are there in 516950.sorted.bam file? The dedupped bam file (516950.dedup.bam)? How many reads were marked as duplicates? (Hint: the flags are the sum of the value of each individual property assigned to a read; duplicate = 1024)
 
@@ -69,8 +69,6 @@ In `/scratch/bio373_2020/data/SNPcalling/answers/MappingAnswers.md`
 
 4. Count the number of each genotype (0/0, 0/1, etc) for each sample.
 
-## 5. Variant call part 2
+5. Here, we'll look in the filtered VCF (05_variants_filtered.vcf.gz). This time, see if you notice what changed after the filtration step. For example, the FILTER field should now have a value (not just '.').
 
-1. Here, we'll look in the filtered VCF (05_variants_filtered.vcf.gz). This time, see if you notice what changed after the filtration step. For example, the FILTER field should now have a value (not just '.'). 
-
-2. Count the number of variants that failed each of the filters we applied (those applied to stats in the INFO field).
+6. Count the number of variants that failed each of the filters we applied (those applied to stats in the INFO field).
