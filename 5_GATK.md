@@ -121,4 +121,7 @@ $ gatk VariantFiltration -R 00_input/MedtrChr2.fa -O 03_callSNPs/05_variants_fil
 If at least one sample fails the G_filter, a semicolon-separated list of codes for filters that fail shows up in FORMAT field.  
 i.g. chr2:8248 failed the filter named "QD".
 
-<img src=photo/filtered.png>
+![Filtered](https://user-images.githubusercontent.com/58171601/135255461-3cba16e7-2269-4585-9ff9-3eae3068549f.png)
+
+
+
