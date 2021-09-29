@@ -35,7 +35,7 @@ Make sure you are in the directory you think you are in.
 Start from your directory on the server for the course and make a new folder for this exercise:
 
 ```bash
-$ ssh -J username@fgcz-c-047 username@fgcz-kl-003
+$ ssh your_BFabric_account_name@172.23.30.6
 $ cd /scratch/bio373_2021/YOUR_USERNAME
 $ mkdir VarCall
 ```
