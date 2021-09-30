@@ -48,14 +48,14 @@ You can see all sequence IDs start with `@700`.
 So, you can count the number of the sequences with counting `@700`.
 
 ```bash
-$ zless 00_input/516950_chr2_R1.fastq.gz | grep "@700" | wc -l
+$ zless 00_input/516950_chr2_R1.fastq.gz | grep "^@700" | wc -l
 165033
-$ zless 00_input/516950_chr2_R2.fastq.gz | grep "@700" | wc -l
-165035
-$ zless 00_input/660389_chr2_R1.fastq.gz | grep "@700" | wc -l
+$ zless 00_input/516950_chr2_R2.fastq.gz | grep "^@700" | wc -l
+165033
+$ zless 00_input/660389_chr2_R1.fastq.gz | grep "^@700" | wc -l
 157539
-$ zless 00_input/660389_chr2_R2.fastq.gz | grep "@700" | wc -l
-157540
+$ zless 00_input/660389_chr2_R2.fastq.gz | grep "^@700" | wc -l
+157539
 $
 ```
 
