@@ -21,17 +21,23 @@ Make sure you are in `VarCall` directory.
 
 > 2-1. How many reads does each fastq file have (\*\_R1.fastq.gz)?
 
+Each sequence in fastq file has 4 lines of information.
+So, you can count the number of sequences by counting the lines and dividing them by 4.
+Before that, you need to enter the input directory. And you have to use some bash script to divide them.
+
 ```bash
-$ zless 00_input/516950_chr2_R1.fastq.gz | grep -c "^@"
-166140
-$ zless 00_input/516950_chr2_R2.fastq.gz | grep -c "^@"
-173179
-$ zless 00_input/660389_chr2_R1.fastq.gz | grep -c "^@"
-158569
-$ zless 00_input/660389_chr2_R2.fastq.gz | grep -c "^@"
-165753
+$ cd 00_input
+$ echo $(( $(zcat 516950_chr2_R1.fastq.gz | wc -l) /4 ))
+165033
+$ echo $(( $(zcat 516950_chr2_R2.fastq.gz | wc -l) /4 ))
+165033
+$ echo $(( $(zcat 660389_chr2_R1.fastq.gz | wc -l) /4 ))
+157539
+$ echo $(( $(zcat 660389_chr2_R2.fastq.gz | wc -l) /4 ))
+157539
 $
 ```
+
 
 * * *
 
