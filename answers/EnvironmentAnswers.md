@@ -22,14 +22,14 @@ Make sure you are in `VarCall` directory.
 > 2-1. How many reads does each fastq file have (\*\_R1.fastq.gz)?
 
 ```bash
-$ zless 00_input/516950_chr2_R1.fastq.gz | grep -c "@"
-249252
-$ zless 00_input/516950_chr2_R2.fastq.gz | grep -c "@"
-264430
-$ zless 00_input/660389_chr2_R1.fastq.gz | grep -c "@"
-237316
-$ zless 00_input/660389_chr2_R2.fastq.gz | grep -c "@"
-251411
+$ zless 00_input/516950_chr2_R1.fastq.gz | grep -c "^@"
+166140
+$ zless 00_input/516950_chr2_R2.fastq.gz | grep -c "^@"
+173179
+$ zless 00_input/660389_chr2_R1.fastq.gz | grep -c "^@"
+158569
+$ zless 00_input/660389_chr2_R2.fastq.gz | grep -c "^@"
+165753
 $
 ```
 
