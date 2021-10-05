@@ -105,6 +105,27 @@ $ zless 03_callSNPs/04_raw_variants.vcf.gz | cut -f 11 | grep -c "1|1"
 $
 ```
 
+Another option is to use `sort` and `uniq -c` commands.
+
+```bash
+$ zgrep -v “^#” 05_variants_filtered.vcf.gz | cut -f 10 | cut -f 1 -d “:” | sort | uniq -c 
+   1452 ./.
+     17 .|.
+  12472 0/0
+   3104 0/1
+     10 0/2
+    150 0|0
+   3672 0|1
+      5 0|2
+   8669 1/1
+    134 1/2
+  10442 1|1
+     63 1|2
+      2 2/2
+      2 2|2
+$
+```
+
 * * *
 
 ## Question 5
